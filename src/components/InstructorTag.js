@@ -6,7 +6,9 @@ const InstructorTag = (props) => {
       <Emoji>{props.emoji}</Emoji>
       <Name>{props.name}</Name>
 
-      <GoToGithub onClick={() => window.open(`${props.github}`)}>
+      <GoToGithub
+        onClick={() => window.open(`https://github.com/${props.github}`)}
+      >
         Go to GitHub
       </GoToGithub>
     </TagWrapper>
