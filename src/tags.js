@@ -3,7 +3,7 @@ const tags = [
     id: 1,
     emoji: "🌚",
     name: "Hamza",
-    Link: "https://github.com/DarthHamza",
+    github: "https://github.com/DarthHamza",
   },
 
   {

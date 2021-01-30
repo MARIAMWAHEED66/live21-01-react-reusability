@@ -1,15 +1,14 @@
 import { Emoji, Name, GoToGithub, TagWrapper } from "../styles";
 
-import tags from "../data";
-
-const openWindow = (props) => window.open(props.tag.link);
 const InstructorTag = (props) => {
   return (
     <TagWrapper>
-      <Emoji>{props.tag.emoji}</Emoji>
-      <Name>{props.tag.name}</Name>
+      <Emoji>{props.emoji}</Emoji>
+      <Name>{props.name}</Name>
 
-      <GoToGithub onClick={openWindow}>Go to GitHub</GoToGithub>
+      <GoToGithub onClick={() => window.open(`${props.github}`)}>
+        Go to GitHub
+      </GoToGithub>
     </TagWrapper>
   );
 };
